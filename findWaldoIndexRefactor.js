@@ -5,7 +5,7 @@
 function findWaldo(arr, found) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] === "Waldo") {
-      var waldoIndex = i;
+      var waldoIndex = arr.indexOf(arr[i]);
       found(waldoIndex);   // execute callback
     }
   }
